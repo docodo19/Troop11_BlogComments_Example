@@ -1,0 +1,14 @@
+<h1>My Blogs</h1>
+
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>Created</th>
+    </tr>
+    <tr ng-repeat="b in vm.blogs">
+        <td>
+            <a href="/blog/{{b._id}}">{{b.title}}</a>
+        </td>
+        <td>{{b.timeCreate|timeAgo}}</td>
+    </tr>
+</table>

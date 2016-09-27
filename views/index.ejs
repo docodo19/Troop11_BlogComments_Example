@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="blogapp">
+
+<head>
+    <title>blogapp</title>
+    <meta charset="utf-8">
+    <base href="/" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ngApp/css/site.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>blogapp</h1>
+        <div>
+            <a href="/">Home</a> |
+            <a href="/about">About</a> |
+            <a href="/blog">My Blogs</a>
+        </div>
+        <hr />
+
+        <ui-view></ui-view>
+    </div>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-timeago/dist/angular-timeago.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="/ngApp/app.js"></script>
+    <script src="/ngApp/services/services.js"></script>
+    <script src="/ngApp/services/blogService.js"></script>
+    <script src="/ngApp/controllers/controllers.js"></script>
+    <script src="/ngApp/controllers/blogController.js"></script>
+    <script src="/ngApp/controllers/blogDetailsController.js"></script>
+    <script src="/ngApp/controllers/blogCreateController.js"></script>
+    <script src="/ngApp/controllers/blogDEleteController.js"></script>
+
+</body>
+
+</html>

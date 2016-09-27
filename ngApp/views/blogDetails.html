@@ -1,0 +1,27 @@
+<h1>{{vm.blog.title}}</h1>
+<h5>{{vm.blog.timeCreate | timeAgo}}</h5>
+<hr>
+<h4>
+    {{vm.blog.message}}
+</h4>
+<hr>
+
+<form ng-submit="vm.saveComment()">
+    <div class="form-group">
+        <div class="col-md-9">
+            <input type="text" class="form-control" ng-model="vm.comment.message" value="" placeholder="leave a comment...">
+            <!-- <textarea class="form-control" ng-model="vm.comment.message" rows="8" cols="40"></textarea> -->
+        </div>
+        <div class="col-md-3">
+            <input type="submit" class="btn btn-success btn-block" value="Save">
+        </div>
+    </div>
+</form>
+<hr>
+<table class="table">
+    <tr ng-repeat='c in vm.blog.comments'>
+        <td>
+            {{c.message}}
+        </td>
+    </tr>
+</table>
