@@ -1,0 +1,24 @@
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.container-div {
+    background-color:#fc7431;
+    height: 100vh !important;
+}
+
+body {
+    background-color:#000000;
+}
+
+.about-page {
+    background-color: #e67db7;
+    height: 100vh !important;
+
+}
+.home-page{
+    background-color:#329c40;
+    height: 100vh !important;
+
+}
